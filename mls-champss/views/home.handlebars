@@ -1,0 +1,23 @@
+<h1>Champions Through the Years</h1>
+{{ allChampions}}
+<h3>1996-2023</h3>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Year</th>
+        <th>Name</th>
+        <th>Score</th>
+        <th>TeamInfoLink</th>
+        <th></th>
+    </tr>
+    {{#each champions}}
+    <tr>
+        <td>{{id}}</td>
+        <td>{{year}}</td>
+        <td>{{name}}</td>
+        <td>{{score}}</td>
+        <td>{{teamInfoLink}}</td>
+    </tr>
+    {{/each}}
+</table>
